@@ -1,54 +1,6 @@
-// import React from 'react';
-// import Navbar from '../components/common/Navbar';
-// import Sidebar from '../components/common/Sidebar';
-// import { useAuth } from '../context/AuthContext';
-
-// const Profile = () => {
-//   const { user } = useAuth();
-
-//   return (
-//     <div className="min-h-screen bg-gray-100">
-//       <Navbar />
-//       <div className="flex">
-//         <Sidebar />
-//         <main className="flex-1 p-8">
-//           <h1 className="text-3xl font-bold text-gray-800">Profile</h1>
-//           <p className="text-gray-600 mt-2">Manage your account settings</p>
-          
-//           <div className="mt-8 bg-white rounded-xl shadow-md p-6">
-//             <div className="space-y-4">
-//               <div>
-//                 <label className="text-sm font-medium text-gray-500">Full Name</label>
-//                 <p className="text-lg text-gray-800">{user?.fullname}</p>
-//               </div>
-//               <div>
-//                 <label className="text-sm font-medium text-gray-500">Username</label>
-//                 <p className="text-lg text-gray-800">{user?.username}</p>
-//               </div>
-//               <div>
-//                 <label className="text-sm font-medium text-gray-500">Role</label>
-//                 <p className="text-lg text-gray-800 capitalize">{user?.role}</p>
-//               </div>
-//               <div>
-//                 <label className="text-sm font-medium text-gray-500">Location</label>
-//                 <p className="text-lg text-gray-800">{user?.location || 'Not set'}</p>
-//               </div>
-//               <div>
-//                 <label className="text-sm font-medium text-gray-500">Phone</label>
-//                 <p className="text-lg text-gray-800">{user?.phone || 'Not set'}</p>
-//               </div>
-//             </div>
-//           </div>
-//         </main>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Profile;
 
 // ============================================
-// FILE: frontend/src/pages/Profile.jsx - REPLACE ENTIRE FILE
+// FILE: frontend/src/pages/Profile.jsx - 
 // ============================================
 import React, { useState } from 'react';
 import Navbar from '../components/common/Navbar';
@@ -57,7 +9,6 @@ import Modal from '../components/common/Modal';
 import { useAuth } from '../context/AuthContext';
 import { 
   User, 
-  Mail, 
   Phone, 
   MapPin, 
   Shield, 
