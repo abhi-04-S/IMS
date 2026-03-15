@@ -13,11 +13,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'https://ims-black.vercel.app'
-  ],
-  credentials: true,
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
