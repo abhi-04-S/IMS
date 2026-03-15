@@ -15,8 +15,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://ims-1kx55bktk-abhi-04-s-projects.vercel.app',
-    'https://ims-git-main-abhi-04-s-projects.vercel.app'
+    'https://ims-black.vercel.app'
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
